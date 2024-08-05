@@ -1,22 +1,25 @@
-class Node {
-    int data;      
-    Node next;        
-    // Constructor
-    public Node(int data1, Node next1) {
-        this.data = data1;
-        this.next = next1;
-    }
+GFG GFG GFG GFG GFG 
+// User function Template for Java 
 
-    public Node(int data1) {
-        this.data = data1;
-        this.next = null;
-    }
+/*
+class Node {
+    int data;
+    Node next;
+
+    Node() { data = 0; }
+    Node(int d) { data = d; }  //constructor to create a new node
 }
-public class Main {
-    public static void main(String[] args) {
-        int[] arr = {2, 5, 8, 7};
-        Node x = new Node(arr[0]);
-        Node y = x;
-        System.out.println(y);
+*/
+class Solution {
+    static Node constructLL(int arr[]) {
+        // code here
+        Node head = new Node(arr[0]);
+        Node mover = head;
+        for(int i=1;i<arr.length;i++){
+            Node temp = new Node(arr[i]);
+            mover.next = temp;
+            mover = temp;
+        }
+        return head;
     }
 }
