@@ -61,9 +61,9 @@ class Solution
 	        if(isLeaf(curr) == false) temp.push(curr.data);
 	        if(curr.right != null) curr = curr.right;
 	        else curr = curr.left;
-    }
+	    }
 	        while(!temp.isEmpty()){
 	            res.add(temp.pop());
 	        }
-  }
+	}
 }
