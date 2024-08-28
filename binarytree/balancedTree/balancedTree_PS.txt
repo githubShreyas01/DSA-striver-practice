@@ -1,5 +1,6 @@
 Problem Link: https://leetcode.com/problems/balanced-binary-tree/description/
 
+Logic : (lh-rh) should be less than 1 then its a balanced tree.
 110. Balanced Binary Tree
 
 Given a binary tree, determine if it is height-balanced 
