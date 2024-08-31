@@ -3,7 +3,7 @@ class Solution {
         int n = prices.length;
         int mini = prices[0];
         int prof = 0;
-        int cost =0;
+        int cost = 0;
 
         for(int i =1; i<n;i++){
             cost = prices[i] - mini;
