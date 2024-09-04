@@ -14,12 +14,10 @@ public class bubbleSort {
                     didSwap = 1;
                 }
             }
-
             if(didSwap ==0){ // for optimizing code i.e. if loop runs for first time ,
                 break;       // and no swap happens this means arr already in sorted asc order then no need for further loop running.
             }
         }
-
         for(int i=0;i<=n-1;i++){
             System.out.print(arr[i] + " ");
         }
